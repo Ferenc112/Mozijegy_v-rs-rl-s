@@ -1,0 +1,25 @@
+Film választás:
+	- film név 
+	- készítő
+	- dátum hogy meddig lehet meg nézni a filmet és melyik órákban
+	- terem szám
+	- jegy ár
+	- kép a filmről
+	-kereső rendszer pl. idő/név
+Mozi teremke:
+	- egy gomb ami tovább mehet a hely választásra 
+	- információk a filmről ami ép tart és mi következik
+	- terem alak kép 
+Hely választás:
+	- egy kép amin tudol választani
+	- ár kiírás 
+	- menyi jegyet választotál
+	- gomb véglegsités
+	- egy szöveg ami kiírja hogy sikeres a jegy vásárlás
+
+
+termek:
+1 terem = 42 fős 7 sor 6 szék
+2 terem = 60 fős 10 sor 6 szék
+3 terem = 25 fős 5 sor 5 szék
+
