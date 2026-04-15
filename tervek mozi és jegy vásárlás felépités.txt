@@ -17,6 +17,7 @@ Hely választás:
 	- gomb véglegsités
 	- egy szöveg ami kiírja hogy sikeres a jegy vásárlás
 
+fetch be olvasást kell használni a betöltéshez js ben!
 
 termek:
 1 terem = 42 fős 7 sor 6 szék
