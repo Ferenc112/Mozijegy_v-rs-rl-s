@@ -6,6 +6,12 @@ body{
     text-align: center;
 }
 
+.doboz{
+    background-color: lightgray;
+    padding: 5px;
+    border-radius: 10px;
+}
+
 .film-container {
   display: flex;
   flex-wrap: wrap;
