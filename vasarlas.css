@@ -12,84 +12,54 @@ body{
   gap: 20px;
   justify-content: center;
 }
-
-.film-kartya {
-  width: 250px;
-  padding: 15px;
-  border: 1px solid #1976d2;
-  border-radius: 10px;
-  background-color: #ffffff;
-  box-shadow: 0 4px 8px rgba(0,0,0,0.1);
-}
-
-.film-kartya h3 {
-  margin: 0 0 10px;
-}
-
-.fejlec{
-    font-size: 24px;
-    font-weight: bold;
-    margin-bottom: 20px;
-    background-color: #1976d2;
-    color: white;
-    padding: 10px;
-    border-radius: 5px;
-}
-
-h2 {
-    font-size: 20px;
-    margin-bottom: 15px;
-    color: #333;
-}
-
-.vasarlas-gomb {
-    background-color: #1976d2;
-    color: white;
-    padding: 10px 20px;
-    border: none;
-    border-radius: 5px;
-    cursor: pointer;
-    font-size: 16px;
-    margin-top: 10px;
-    transition: background-color 0.3s;
-}
-
-.vasarlas-gomb:hover {
-    background-color: #1565c0;
-}
-
-/* Vásárlási oldal stílusa */
-.vasarlas-container {
-    display: flex;
-    gap: 30px;
-    max-width: 1200px;
-    margin: 0 auto;
+body{
+    font-family: Arial, sans-serif;
+    background-color: #f0f0f0;
+    margin: 0;
     padding: 20px;
+    text-align: center;
+}
+
+.kepek{
+  width: 200px; 
+  height: 300px; 
+  margin-bottom: 10px;
+}
+
+.doboz{
+    background-color: lightgray;
+    padding: 5px;
+    border-radius: 10px;
 }
 
 .film-info {
-    flex: 1;
-    background-color: white;
+    background-color: #f9f9f9;
     padding: 20px;
     border-radius: 10px;
-    border: 1px solid #1976d2;
+    border: 1px solid #ccc;
+    margin-bottom: 20px;
+    max-width: 400px;
+    margin-left: auto;
+    margin-right: auto;
 }
 
 .film-info h2 {
     margin-top: 0;
-    color: #1976d2;
+    color: #333;
 }
 
 .hely-valasztas {
-    flex: 1;
-    background-color: white;
+    background-color: #f9f9f9;
     padding: 20px;
     border-radius: 10px;
-    border: 1px solid #1976d2;
+    border: 1px solid #ccc;
+    max-width: 400px;
+    margin-left: auto;
+    margin-right: auto;
 }
 
 .hely-valasztas h2 {
-    color: #1976d2;
+    color: #333;
     text-align: center;
     margin-bottom: 20px;
 }
@@ -121,7 +91,7 @@ h2 {
 .szek {
     width: 35px;
     height: 35px;
-    border: 2px solid #1976d2;
+    border: 2px solid #ccc;
     background-color: white;
     cursor: pointer;
     border-radius: 5px;
@@ -134,16 +104,16 @@ h2 {
 }
 
 .szek:hover {
-    background-color: #e3f2fd;
+    background-color: #e0e0e0;
 }
 
 .szek.valasztott {
-    background-color: #1976d2;
+    background-color: #333;
     color: white;
 }
 
 .osszar-container {
-    background-color: #e3f2fd;
+    background-color: #e0e0e0;
     padding: 15px;
     border-radius: 5px;
     margin-bottom: 20px;
@@ -158,7 +128,7 @@ h2 {
 
 .vegalegit-gomb {
     width: 100%;
-    background-color: #1976d2;
+    background-color: #333;
     color: white;
     padding: 15px;
     border: none;
@@ -167,6 +137,42 @@ h2 {
     font-size: 16px;
     font-weight: bold;
     transition: background-color 0.3s;
+}
+
+.vegalegit-gomb:hover:not(:disabled) {
+    background-color: #222;
+}
+
+.vegalegit-gomb:disabled {
+    background-color: #ccc;
+    cursor: not-allowed;
+}
+
+.siker-uzenet {
+    background-color: #4caf50;
+    color: white;
+    padding: 20px;
+    border-radius: 5px;
+    text-align: center;
+    font-size: 18px;
+    font-weight: bold;
+}
+
+.vissza-gomb {
+    background-color: #999;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 14px;
+    margin-top: 15px;
+    transition: background-color 0.3s;
+}
+
+.vissza-gomb:hover {
+    background-color: #777;
+}
 }
 
 .vegalegit-gomb:hover:not(:disabled) {

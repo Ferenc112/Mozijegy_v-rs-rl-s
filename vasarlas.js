@@ -1,59 +1,31 @@
+
 let filmAdatok = null;
 let valasztottHelyek = new Set();
-let filmekLista = [];
 const teremInfok = {
     1: { ferohely: 42, sor: 7, szek_per_sor: 6 },
     2: { ferohely: 60, sor: 10, szek_per_sor: 6 },
     3: { ferohely: 25, sor: 5, szek_per_sor: 5 }
 };
 
-window.onload = filmbetoltese;
-
-function filmbetoltese() {
-  fetch("filmek.json")
-    .then(response => response.json())
-    .then(data => {
-      filmekLista = data;
-      const container = document.getElementById("film-container");
-
-      container.innerHTML = "";
-
-      data.forEach(film => {
-        const kartya = document.createElement("div");
-        kartya.classList.add("film-kartya");
-
-        kartya.innerHTML = `
-          <img src="${film.kep_url}" alt="${film.nev}" style="width: 100%; height: 150px; object-fit: cover; border-radius: 5px; margin-bottom: 10px;">
-          <h3>${film.nev}</h3>
-          <p><strong>Producer:</strong> ${film.producer}</p>
-          <p><strong>Hossz:</strong> ${film.hossz_perc} perc</p>
-          <p><strong>Jegyár:</strong> ${film.jegy_ar} Ft</p>
-          <p><strong>Terem:</strong> ${film.terem}</p>
-          <p><strong>Vetítés vége:</strong> ${film.vetites_vege}</p>
-          <button onclick="vasarlasOldalaAtvalt(${film.id})" class="vasarlas-gomb">Vásárlás</button>
-        `;
-
-        container.appendChild(kartya);
-      });
-    })
-    .catch(error => console.error("Hiba:", error));
-}
-
-function vasarlasOldalaAtvalt(filmId) {
-    filmAdatok = filmekLista.find(f => f.id === filmId);
-    if (filmAdatok) {
-        valasztottHelyek.clear();
-        document.getElementById('siker-uzenet').style.display = 'none';
-        filmInfoMegjelenites();
-        teremMegjelenites();
-        document.getElementById("filmvalasztas-nezes").style.display = "none";
-        document.getElementById("vasarlas-nezes").style.display = "block";
+window.onload = () => {
+    const urlParams = new URLSearchParams(window.location.search);
+    const filmId = urlParams.get('filmId');
+    if (filmId) {
+        filmBetoltese(filmId);
     }
-}
+};
 
-function visszateresAFilmekhez() {
-    document.getElementById("vasarlas-nezes").style.display = "none";
-    document.getElementById("filmvalasztas-nezes").style.display = "block";
+function filmBetoltese(filmId) {
+    fetch("filmek.json")
+        .then(response => response.json())
+        .then(data => {
+            filmAdatok = data.find(f => f.id == filmId);
+            if (filmAdatok) {
+                filmInfoMegjelenites();
+                teremMegjelenites();
+            }
+        })
+        .catch(error => console.error("Hiba:", error));
 }
 
 function filmInfoMegjelenites() {
