@@ -1,0 +1,122 @@
+[
+  {
+    "id": 1,
+    "nev": "Árnyékok városa",
+    "producer": "Kovács Film",
+    "hossz_perc": 120,
+    "kezdes_idopont": "2026-04-15T13:00",
+    "vetites_vege": "2026-04-22",
+    "jegy_ar": 2500,
+    "terem": 1,
+    "leiras": "Egy sötét város titkai és rejtélyei bontakoznak ki egy nyomozó előtt.",
+    "kep_url": "https://picsum.photos/200/300?random=1"
+  },
+  {
+    "id": 2,
+    "nev": "Utolsó esély",
+    "producer": "Sunrise Studio",
+    "hossz_perc": 105,
+    "kezdes_idopont": "2026-04-15T15:30",
+    "vetites_vege": "2026-04-22",
+    "jegy_ar": 2700,
+    "terem": 2,
+    "leiras": "Egy férfi mindent kockára tesz, hogy megmentse családját.",
+    "kep_url": "https://picsum.photos/200/300?random=2"
+  },
+  {
+    "id": 3,
+    "nev": "Galaxis harcosai",
+    "producer": "Nova Pictures",
+    "hossz_perc": 130,
+    "kezdes_idopont": "2026-04-15T18:00",
+    "vetites_vege": "2026-04-23",
+    "jegy_ar": 3000,
+    "terem": 3,
+    "leiras": "Egy csapat harcos megpróbálja megmenteni a galaxist egy ősi fenyegetéstől.",
+    "kep_url": "https://picsum.photos/200/300?random=3"
+  },
+  {
+    "id": 4,
+    "nev": "Eltűnt múlt",
+    "producer": "Deep Vision",
+    "hossz_perc": 95,
+    "kezdes_idopont": "2026-04-15T20:30",
+    "vetites_vege": "2026-04-21",
+    "jegy_ar": 2400,
+    "terem": 1,
+    "leiras": "Egy nő múltja titkokat rejt, melyek veszélyes igazságokat fednek fel.",
+    "kep_url": "https://picsum.photos/200/300?random=4"
+  },
+  {
+    "id": 5,
+    "nev": "Száguldó élet",
+    "producer": "Fast Lane Prod",
+    "hossz_perc": 110,
+    "kezdes_idopont": "2026-04-16T13:00",
+    "vetites_vege": "2026-04-22",
+    "jegy_ar": 2800,
+    "terem": 2,
+    "leiras": "Egy autóversenyző karrierje és magánélete veszélybe kerül.",
+    "kep_url": "https://picsum.photos/200/300?random=5"
+  },
+  {
+    "id": 6,
+    "nev": "Titkok háza",
+    "producer": "Mystery Works",
+    "hossz_perc": 100,
+    "kezdes_idopont": "2026-04-16T15:30",
+    "vetites_vege": "2026-04-23",
+    "jegy_ar": 2600,
+    "terem": 3,
+    "leiras": "Egy elhagyatott házban rejtélyes események történnek.",
+    "kep_url": "https://picsum.photos/200/300?random=6"
+  },
+  {
+    "id": 7,
+    "nev": "Vihar előtt",
+    "producer": "Storm Studio",
+    "hossz_perc": 115,
+    "kezdes_idopont": "2026-04-16T18:00",
+    "vetites_vege": "2026-04-22",
+    "jegy_ar": 2500,
+    "terem": 1,
+    "leiras": "Egy kisváros lakói egy közelgő természeti katasztrófával néznek szembe.",
+    "kep_url": "https://picsum.photos/200/300?random=7"
+  },
+  {
+    "id": 8,
+    "nev": "Kódolt világ",
+    "producer": "Tech Films",
+    "hossz_perc": 125,
+    "kezdes_idopont": "2026-04-16T20:30",
+    "vetites_vege": "2026-04-21",
+    "jegy_ar": 2900,
+    "terem": 2,
+    "leiras": "Egy hacker felfedez egy veszélyes összeesküvést a digitális világban.",
+    "kep_url": "https://picsum.photos/200/300?random=8"
+  },
+  {
+    "id": 9,
+    "nev": "Ősi erő",
+    "producer": "Legendary Prod",
+    "hossz_perc": 140,
+    "kezdes_idopont": "2026-04-17T17:00",
+    "vetites_vege": "2026-04-23",
+    "jegy_ar": 3100,
+    "terem": 3,
+    "leiras": "Egy ősi erő felébred, és veszélybe sodorja az emberiséget.",
+    "kep_url": "https://picsum.photos/200/300?random=9"
+  },
+  {
+    "id": 10,
+    "nev": "Visszatérés",
+    "producer": "Future Films",
+    "hossz_perc": 110,
+    "kezdes_idopont": "2026-04-17T19:30",
+    "vetites_vege": "2026-04-22",
+    "jegy_ar": 2700,
+    "terem": 1,
+    "leiras": "Egy régi hős visszatér, hogy megmentse a világot egy új fenyegetéstől.",
+    "kep_url": "https://picsum.photos/200/300?random=10"
+  }
+]
