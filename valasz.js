@@ -11,13 +11,14 @@ function filmbetoltese() {
         kartya.classList.add("film-kartya");
 
         kartya.innerHTML = `
+          <img class="kepek" src="img/${film.kep}" alt="${film.nev}">
           <h3>${film.nev}</h3>
           <p><strong>Producer:</strong> ${film.producer}</p>
           <p><strong>Hossz:</strong> ${film.hossz_perc} perc</p>
           <p><strong>Jegyár:</strong> ${film.jegy_ar} Ft</p>
           <p><strong>Terem:</strong> ${film.terem}</p>
           <p><strong>Hét vége:</strong> ${film.vetites_vege}</p>
-          <button onclick="ujLap()"> Mozijegy_vasarlas</button>
+          <button onclick="ujLap()"> Jegy foglalás</button>
         `;
 
         container.appendChild(kartya);
