@@ -17,6 +17,7 @@ function filmbetoltese() {
           <p><strong>Jegyár:</strong> ${film.jegy_ar} Ft</p>
           <p><strong>Terem:</strong> ${film.terem}</p>
           <p><strong>Hét vége:</strong> ${film.vetites_vege}</p>
+          <button onclick="ujLap()"> Mozijegy_vasarlas</button>
         `;
 
         container.appendChild(kartya);
@@ -24,5 +25,11 @@ function filmbetoltese() {
     })
     .catch(error => console.error("Hiba:", error));
 }
+
+function ujLap() {
+  window.location.href = "arusit.html";
+};
+
+window.ujLap = ujLap; 
 
 window.onload = filmbetoltese;
