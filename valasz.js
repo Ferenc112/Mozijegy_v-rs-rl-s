@@ -18,7 +18,7 @@ function filmbetoltese() {
           <p><strong>Jegyár:</strong> ${film.jegy_ar} Ft</p>
           <p><strong>Terem:</strong> ${film.terem}</p>
           <p><strong>Hét vége:</strong> ${film.vetites_vege}</p>
-          <button onclick="ujLap()"> Mozijegy_vasarlas</button>
+          <button onclick="ujLap()"> Jegy foglalás</button>
         `;
 
         container.appendChild(kartya);

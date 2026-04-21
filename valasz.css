@@ -6,6 +6,12 @@ body{
     text-align: center;
 }
 
+.kepek{
+  width: 200px; 
+  height: 300px; 
+  margin-bottom: 10px;
+}
+
 .doboz{
     background-color: lightgray;
     padding: 5px;
