@@ -1,3 +1,19 @@
+.vissza-gomb {
+  background-color: #f0f0f0;
+  color: rgb(153, 153, 153);
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 19px;
+  margin: 20px auto 0 auto;
+  display: block;
+  transition: background-color 0.3s;
+}
+.vissza-gomb:hover {
+  background-color: #f0f0f0;
+  color: #000;
+}
 
 body{
     font-family: Arial, sans-serif;
