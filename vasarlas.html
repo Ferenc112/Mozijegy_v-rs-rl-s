@@ -8,27 +8,33 @@
 </head>
 <body>
     <h1>Mozijegy vásárlás</h1>
-    <div class="film-info">
-        <img id="film-kep" src="" alt="Film képe" style="width: 100%; height: 200px; object-fit: cover; border-radius: 5px; margin-bottom: 10px;">
-        <h2 id="film-nev"></h2>
-        <p><strong>Producer:</strong> <span id="film-producer"></span></p>
-        <p><strong>Hossz:</strong> <span id="film-hossz"></span> perc</p>
-        <p><strong>Jegyár:</strong> <span id="film-ar"></span> Ft</p>
-        <p><strong>Terem:</strong> <span id="film-terem"></span></p>
-        <p><strong>Vetítés vége:</strong> <span id="film-vege"></span></p>
-        <p><strong>Leírás:</strong> <span id="film-leiras"></span></p>
-        <button onclick="window.location.href='valasz.html'" class="vissza-gomb">Vissza</button>
-    </div>
-    <div class="hely-valasztas">
-        <h2>Hely Választás</h2>
-        <div id="terem-container"></div>
-        <div class="osszar-container">
-            <p>Kiválasztott helyek: <span id="valasztott-helyek">0</span></p>
-            <p>Összár: <span id="osszar">0</span> Ft</p>
-            <button id="vegalegit-gomb" class="vegalegit-gomb" onclick="vegalegites()" disabled>Véglegesítés</button>
+    <div class="main-container">
+        <div class="film-info">
+            <img id="film-kep" src="" alt="Film képe" style="width: 68%; height: 400px; object-fit: cover; border-radius: 5px; margin-bottom: 10px;">
+            <h2 id="film-nev"></h2>
+            <div class="iras">
+            <p><strong>Producer:</strong> <span id="film-producer"></span></p>
+            <p><strong>Hossz:</strong> <span id="film-hossz"></span> perc</p>
+            <p><strong>Jegyár:</strong> <span id="film-ar"></span> Ft</p>
+            <p><strong>Terem:</strong> <span id="film-terem"></span></p>
+            <p><strong>Vetítés vége:</strong> <span id="film-vege"></span></p>
+            <p><strong>Leírás:</strong> <span id="film-leiras"></span></p>
+            </div>
+            <button onclick="window.location.href='valasz.html'" class="vissza-gomb">Vissza</button>
+            <p> </p>
+            <div id="siker-uzenet" class="siker-uzenet" style="display: none;">
+                
+                <p>✓ Sikeres jegy vásárlás!</p>
+            </div>
         </div>
-        <div id="siker-uzenet" class="siker-uzenet" style="display: none;">
-            <p>✓ Sikeres jegy vásárlás!</p>
+        <div class="hely-valasztas">
+            <h2>Hely Választás</h2>
+            <div id="terem-container"></div>
+            <div class="osszar-container">
+                <p>Kiválasztott helyek: <span id="valasztott-helyek">0</span></p>
+                <p>Összár: <span id="osszar">0</span> Ft</p>
+                <button id="vegalegit-gomb" class="vegalegit-gomb" onclick="vegalegites()" disabled>Véglegesítés</button>
+            </div>
         </div>
     </div>
     <script src="vasarlas.js"></script>

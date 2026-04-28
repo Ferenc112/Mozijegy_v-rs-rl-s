@@ -6,7 +6,14 @@ body{
     padding: 20px;
     text-align: center;
 }
-
+h1{
+    font-size: 50px;
+    color: #8f1010;
+    font-weight: bolder;
+    font-style: italic;
+    margin: 10px;
+    text-decoration:double underline;
+}
 .kepek{
   width: 200px; 
   height: 300px; 
@@ -36,7 +43,12 @@ body{
 }
 
 .film-kartya h3 {
+  font-family: Georgia, 'Times New Roman', Times, serif;
+  color: #8f1010;
+  font-size: 24px;
   margin: 0 0 10px;
+  font-weight: bold;
+  font-style: italic;
 }
 
 .fijlec{
@@ -44,4 +56,21 @@ body{
     font-weight: bold;
     margin-bottom: 20px;
     background-color: rgb(180, 180, 180);
+}
+button {
+    background-color: #fcfcfc;
+    color: rgb(158, 158, 158);
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+    font-weight: bolder;
+    
+    font-size: 25px;
+    transition: background-color 0.3s;
+    text-decoration: underline;
+}
+button:hover {
+    background-color: #b98b8b;
+    color: white;
 }

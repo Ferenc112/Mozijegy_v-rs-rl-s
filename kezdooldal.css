@@ -4,7 +4,7 @@ body {
     min-height: 100vh;
     font-family: Arial, sans-serif;
     background: url('img/filmszinhaz.png') no-repeat center center fixed;
-    background-size:contain;
+    background-size:auto 100%;
     position:static;
 }
 
@@ -30,17 +30,19 @@ body {
 
 .center-content h1 {
     font-size: 2.5rem;
-    color: #222;
+    color: #8f1010;
     margin-bottom: 30px;
     letter-spacing: 2px;
     text-shadow: 0 2px 8px rgba(0,0,0,0.2);
+    
 }
 
 .stilusos-gomb {
+    width: 200px;
     font-size: 1.3rem;
     padding: 15px 40px;
     border: none;
-    border-radius: 30px;
+    border-radius: 15px;
     background: #222;
     color: #fff;
     cursor: pointer;
@@ -51,4 +53,13 @@ body {
 .stilusos-gomb:hover {
     background: #888;
     transform: scale(1.05);
+}
+h1 {
+    font-family: Georgia, 'Times New Roman', Times, serif;
+  color: #8f1010;
+  font-size: 24px;
+  margin: 0 0 10px;
+  font-weight: bold;
+  font-style: italic;
+  text-decoration: double underline;
 }
