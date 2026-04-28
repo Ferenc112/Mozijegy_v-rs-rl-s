@@ -1,35 +1,56 @@
-body{
+body {
     font-family: Arial, sans-serif;
-    background-color: #e3f2fd;
+    background-color: #e4e4e4;
     margin: 0;
     padding: 20px;
     text-align: center;
 }
 
-.film-container {
-  display: flex;
-  flex-wrap: wrap;
-  gap: 20px;
-  justify-content: center;
+.main-container {
+    display: flex;
+    flex-direction: row;
+    justify-content: left;
+    align-items: flex-start;
+    gap: 40px;
+    width: 100%;
+    max-width: 1200px;
+    margin: 0 auto;
 }
-body{
-    font-family: Arial, sans-serif;
-    background-color: #f0f0f0;
-    margin: 0;
+
+.film-info {
+    flex: 1 1 0;
+    max-width: 400px;
+    background-color: #f9f9f9;
     padding: 20px;
-    text-align: center;
-}
-
-.kepek{
-  width: 200px; 
-  height: 300px; 
-  margin-bottom: 10px;
-}
-
-.doboz{
-    background-color: lightgray;
-    padding: 5px;
     border-radius: 10px;
+    border: 1px solid #ccc;
+    margin-bottom: 20px;
+    margin-left: auto;
+    margin-right: auto;
+    
+}
+
+.film-info h2 {
+    margin-top: 0;
+    color: #333;
+}
+
+.hely-valasztas {
+    flex: 2 1 0;
+    min-width: 350px;
+    background-color: #f9f9f9;
+    padding: 20px;
+    border-radius: 10px;
+    border: 1px solid #ccc;
+    max-width: 400px;
+    margin-left: 10px;
+    margin-right: 100px;
+}
+
+.hely-valasztas h2 {
+    color: #333;
+    text-align: center;
+    margin-bottom: 20px;
 }
 
 .film-info {
@@ -39,13 +60,16 @@ body{
     border: 1px solid #ccc;
     margin-bottom: 20px;
     max-width: 400px;
-    margin-left: auto;
-    margin-right: auto;
+    margin-left: 100px;
+    margin-right:10px;
 }
 
 .film-info h2 {
+    text-decoration: underline;
     margin-top: 0;
-    color: #333;
+    color: #000000;
+    font-weight: bolder;
+    font-style: italic;
 }
 
 .hely-valasztas {
@@ -54,12 +78,15 @@ body{
     border-radius: 10px;
     border: 1px solid #ccc;
     max-width: 400px;
-    margin-left: auto;
-    margin-right: auto;
+    margin-left: 10px;
+    margin-right: 100px;
 }
 
 .hely-valasztas h2 {
-    color: #333;
+    text-decoration: underline;
+    font-weight: bolder;
+    font-style: italic;
+    color: #000000;
     text-align: center;
     margin-bottom: 20px;
 }
@@ -68,7 +95,7 @@ body{
     display: flex;
     flex-direction: column;
     align-items: center;
-    gap: 20px;
+    gap: 10px;
     margin-bottom: 20px;
 }
 
@@ -104,7 +131,7 @@ body{
 }
 
 .szek:hover {
-    background-color: #e0e0e0;
+    background-color: #c7c7c7;
 }
 
 .szek.valasztott {
@@ -128,7 +155,7 @@ body{
 
 .vegalegit-gomb {
     width: 100%;
-    background-color: #333;
+    background-color: #2d68b6;
     color: white;
     padding: 15px;
     border: none;
@@ -140,7 +167,7 @@ body{
 }
 
 .vegalegit-gomb:hover:not(:disabled) {
-    background-color: #222;
+    background-color: #4c92e2;
 }
 
 .vegalegit-gomb:disabled {
@@ -151,7 +178,7 @@ body{
 .siker-uzenet {
     background-color: #4caf50;
     color: white;
-    padding: 20px;
+    padding: 1px;
     border-radius: 5px;
     text-align: center;
     font-size: 18px;
@@ -168,50 +195,27 @@ body{
     font-size: 14px;
     margin-top: 15px;
     transition: background-color 0.3s;
-}
-
-.vissza-gomb:hover {
-    background-color: #777;
-}
-
-.vegalegit-gomb:hover:not(:disabled) {
-    background-color: #1565c0;
-}
-
-.vegalegit-gomb:disabled {
-    background-color: #ccc;
-    cursor: not-allowed;
-}
-
-.siker-uzenet {
-    background-color: #4caf50;
-    color: white;
-    padding: 20px;
-    border-radius: 5px;
     text-align: center;
-    font-size: 18px;
-    font-weight: bold;
-}
-
-.vissza-gomb {
-    background-color: #999;
-    color: white;
-    padding: 10px 20px;
-    border: none;
-    border-radius: 5px;
-    cursor: pointer;
-    font-size: 14px;
-    margin-top: 15px;
-    transition: background-color 0.3s;
 }
 
 .vissza-gomb:hover {
     background-color: #777;
 }
 
+.iras{
+    text-align: left;
+    margin: 10px 50px 10px 50px;
+}
 @media (max-width: 768px) {
-    .vasarlas-container {
+    .main-container {
         flex-direction: column;
         gap: 20px;
+        align-items: center;
+        max-width: 100%;
+    }
+    .film-info, .hely-valasztas {
+        margin-left: auto !important;
+        margin-right: auto !important;
+        max-width: 95vw;
     }
 }

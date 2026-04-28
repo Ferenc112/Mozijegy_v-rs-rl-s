@@ -29,7 +29,7 @@ function filmBetoltese(filmId) {
 }
 
 function filmInfoMegjelenites() {
-    document.getElementById("film-kep").src = filmAdatok.kep_url;
+    document.getElementById("film-kep").src = "img/" + filmAdatok.kep;
     document.getElementById("film-nev").textContent = filmAdatok.nev;
     document.getElementById("film-producer").textContent = filmAdatok.producer;
     document.getElementById("film-hossz").textContent = filmAdatok.hossz_perc;
