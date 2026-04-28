@@ -173,7 +173,6 @@ body{
 .vissza-gomb:hover {
     background-color: #777;
 }
-}
 
 .vegalegit-gomb:hover:not(:disabled) {
     background-color: #1565c0;

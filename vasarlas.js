@@ -92,16 +92,46 @@ function osszarSzamitas() {
     }
 }
 
+const fs = require('fs');
+
 function vegalegites() {
     if (valasztottHelyek.size === 0) {
         alert("Kérlek válassz ki legalább egy helyet!");
         return;
     }
-    
+
+    const helyekSzama = valasztottHelyek.size;
+    const osszar = helyekSzama * filmAdatok.jegy_ar;
+
+    const tartalom = 
+    `   ===== MOZI JEGY =====
+
+    Film: ${filmAdatok.nev}
+    Producer: ${filmAdatok.producer}
+    Terem: ${filmAdatok.terem}
+
+    Kiválasztott helyek:
+    ${[...valasztottHelyek].join(', ')}
+
+    Helyek száma: ${helyekSzama}
+
+    Jegy ár: ${filmAdatok.jegy_ar} Ft
+    Összesen: ${osszar} Ft
+
+    Kezdés: ${filmAdatok.kezdes_idopont}
+
+    ====================`;
+
+    const link = document.createElement('a');
+    link.href = 'data:text/plain;charset=utf-8,' + encodeURIComponent(tartalom);
+    link.download = 'jegy.txt';
+    link.click();
+
     const sikerUzenet = document.getElementById("siker-uzenet");
     sikerUzenet.style.display = "block";
-    
+
     setTimeout(() => {
         visszateresAFilmekhez();
     }, 2000);
 }
+
